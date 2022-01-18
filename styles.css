@@ -1,3 +1,4 @@
+/* General */
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +14,6 @@ body, html {
     color: black;
     padding-top: 40px;
     font-size: 1rem;
-}
-
-.archivedate {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #353535;
 }
 
 a {
@@ -63,26 +58,12 @@ main {
     
 }
 
-.blogsidebar {
-    margin-left: 15px;
-    width: 351px;
-    border-radius: 15px;
-    position: relative;
-    padding: 0 15px 15px 15px;
-}
+/* Containers */
 
 
-.blogpost {
-    width: 608px;
-    background: none;
-    border-radius: 15px;
-    height: auto;
-}
+/* Blog post (left side) */
 
-.blogmain {
-    padding: 0 10px;
-}
-
+/* Blog header */
 .blogcat {
     margin-left: 10px;
 }
@@ -105,7 +86,7 @@ main {
     font-size: .9rem;
 }
 
-.blogdate {
+.blogdate, .blogcategory {
     margin: 0 5px;
 }
 
@@ -120,15 +101,29 @@ main {
     color:rgb(8, 201, 159);
 }
 
-.blogtext {
-    margin: 30px 0 40px 0;
+
+/* Blog post */
+.blogpost {
+    width: 608px;
+    background: none;
+    border-radius: 15px;
+    height: auto;
 }
 
-.blogtext p {
-    margin: 15px 0;
-    font-size: 1rem;
+/* Tag bar */
+
+/* Beneath blog post */
+
+/* Sidebar */
+.blogsidebar {
+    margin-left: 15px;
+    width: 351px;
+    border-radius: 15px;
+    position: relative;
+    padding: 0 15px 15px 15px;
 }
 
+/* Search area */
 .sidebarsearch {
     padding: 12px;
     width: 125px;
@@ -142,6 +137,38 @@ main {
     border-bottom-left-radius: 8px;
     border-right: none;
 }
+
+/* Categories */
+
+/* Category 1: Categories */
+
+/* Category 2: Archives */
+.archivedate {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #353535;
+}
+
+/* Category 3: Recent/Related posts */
+
+/* Category 4: Tag cloud */
+
+
+
+.blogmain {
+    padding: 0 10px;
+}
+
+
+.blogtext {
+    margin: 30px 0 40px 0;
+}
+
+.blogtext p {
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
 
 
 .blogtitle {
@@ -308,4 +335,30 @@ input {
     margin-top: 30px;
     border-bottom: 1px solid black;
     font-size: 1.3rem;
+}
+
+
+/* Small mobile view */
+@media (max-width: 480px) {
+
+}
+
+/* Large mobile view */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Tablet view? */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* Desktop view */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
+/* Television/large desktop view */
+@media (min-width: 1201px) {
+
 }

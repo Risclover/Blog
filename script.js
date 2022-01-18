@@ -1,14 +1,11 @@
-let categoryCounts = document.getElementById('categorycount');
+let blogCategory = document.querySelectorAll('.blogcategory');
+let techStuffCount = document.getElementById('techstuffcount');
+let techStuff = 0;
 
-let cat1 = 0;
-let cat2 = 0;
-
-
-categoryCounts.forEach((count) => {
-    if (count > 0) {
-        
+blogCategory.forEach((category) => {
+    if (category.includes('Tech Stuff')) {
+        techStuff++;
+        techStuffCount.textContent = techStuff;
     }
-})
-if (cat1 > 0) {
-    category
-}
+});
+
